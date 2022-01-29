@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int table, answer, count;
+	
+	printf("\n\tWhich times table do you want to learn?");
+	printf("\n\tType here --> ");
+	scanf("%d",&table);
+	
+	do{
+		printf("\t%d x %d = ", table, count);
+		scanf("%d",&answer);	
+	}
+	while(answer==table*count++);
+	printf("\n\t--> YOU WERE WRONG! <--\n\t");
+	
+	system("pause");
+	return 0;
+}
